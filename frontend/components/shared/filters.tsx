@@ -1,41 +1,39 @@
-'use client'
-
-import React from 'react'
+import React from 'react';
 import {
     FilterCheckbox,
     RangeSlider,
     Title,
     CheckboxFiltersGroup,
-} from './index'
-import { Input } from '../ui'
+} from './index';
+import { Input } from '../ui';
 interface Props {
-    className?: string
+    className?: string;
 }
 const defEx = [
     { text: 'Электрика и свет', value: '0' },
     { text: 'Источники питания', value: '1' },
-    { text: 'Водоснабжение и водоотведение', value: '2' },
+    { text: 'Системы безопасности', value: '2' },
     { text: 'Отопление и климат', value: '3' },
     { text: 'Инструмент и оснастка', value: '4' },
-    { text: 'Оборудование и техника для склада', value: '5' },
-]
+    { text: 'Автоматизация и КИП', value: '5' },
+];
 const ex = [
     { text: 'Электрика и свет', value: '0' },
     { text: 'Источники питания', value: '1' },
-    { text: 'Водоснабжение и водоотведение', value: '2' },
+    { text: 'Системы безопасности', value: '2' },
     { text: 'Отопление и климат', value: '3' },
     { text: 'Инструмент и оснастка', value: '4' },
-    { text: 'Оборудование и техника для склада', value: '5' },
+    { text: 'Автоматизация и КИП', value: '5' },
     { text: 'Спецодежда и СИЗ', value: '6' },
-    { text: 'Автоматизация и КИП', value: '7' },
-    { text: 'Системы безопасности', value: '8' },
+    { text: 'Оборудование и техника для склада', value: '7' },
+    { text: 'Водоснабжение и водоотведение', value: '8' },
     { text: 'Телекоммуникационное оборудование и СКС', value: '9' },
     { text: 'Подшипники', value: '10' },
     { text: 'Крепеж', value: '11' },
     { text: 'Масла, смазки и технические жидкости', value: '12' },
     { text: 'Бытовая техника', value: '13' },
     { text: 'Программное обеспечение', value: '14' },
-]
+];
 
 export const Filters: React.FC<Props> = ({ className }) => {
     return (
@@ -85,5 +83,5 @@ export const Filters: React.FC<Props> = ({ className }) => {
                 items={ex}
             />
         </div>
-    )
-}
+    );
+};
