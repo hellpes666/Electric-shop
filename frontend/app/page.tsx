@@ -1,4 +1,10 @@
-import { Container, Filters, Title, TopBar } from '@/components/shared'
+import {
+    Container,
+    Filters,
+    Title,
+    TopBar,
+    ProductCard,
+} from '@/components/shared';
 export default function Home() {
     return (
         <>
@@ -22,12 +28,18 @@ export default function Home() {
                     <div className="flex-1">
                         <div className="flex flex-col gap-16">
                             Список товаров
-                            {/* <ProductsGroupList title="Лампочки" items={[1,2,3,4,5]} />
-                            <ProductsGroupList title="Лампочки" items={[1,2,3,4,5]} /> */}
+                            {/* <ProductCard
+                                id={0}
+                                name={'bulb'}
+                                price={49}
+                                imageUrl={
+                                    "https://toppng.com/uploads/preview/light-bulb-png-transparent-light-bulb-115628766421gdl0skp2k.png"
+                                }
+                            /> */}
                         </div>
                     </div>
                 </div>
             </Container>
         </>
-    )
+    );
 }
